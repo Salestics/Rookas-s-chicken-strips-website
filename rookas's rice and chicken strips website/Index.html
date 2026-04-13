@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rookas's Rice and Chicken Strips Website</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="wrapper topBottomBordersOut">
+      <h1 class="logo"><a href="#">Rookas's Rice and Chicken Strips Website</a></h1>
+      <nav class="main-nav">
+        <ul class="nav">
+          <li class="menu"><a href="chickenstrips.html">Chicken strips</a>
+            <ul class="submenu">
+              <li><a href="howtomakechickenstrips.html">How to make chicken strips</a></li>
+            </ul>
+          </li>
+          <li class="menu"><a href="rice.html">Rice</a>
+            <ul class="submenu">
+              <li><a href="howtomakerice.html">How to make rice</a></li>
+              <li><a href="typesofriceandfunfacts.html">Types of Rice and Fun Facts</a></li>
+            </ul>
+          </li>
+          <li><a href="Index.html">Menu</a></li>
+         </ul>
+      </nav>
+    </div>
+ </header>
+
+<section class="hero">
+  <img class="hero-image" src="https://138169138.cdn6.editmysite.com/uploads/1/3/8/1/138169138/DTCB7HWXD3I45YDO6SLEXDO5.jpeg" alt="ricebowl">
+  <div class="hero-overlay">
+    <div class="hero-text">
+      <h1>Welcome To my site!</h1>
+    </div>
+    <div class="bottom-right">Copyright © 2026 Rookas's Rice and Chicken Strips Website. All rights reserved.</div>
+  </div>
+</section>
+<main>
+<p> Welcome! In this website, you will learn many things about rice, an Asian staple, and chicken strips! This is your ultimate destination for simple, satisfying meals centered around two classic favorites: juicy chicken strips and fluffy rice.
+We believe great food doesn't need to be complicated.</p> 
+<h2><p><a href="#example1">Dont want to read? Jump to the gallery!</a></p></h2>
+<p>your friendly guide to mastering one of the simplest and most satisfying food combinations in the world: chicken strips and rice.
+This website is designed for beginners and curious home cooks who want to learn how to make delicious chicken strips and rice from scratch. We believe everyone can create tasty, comforting meals with just a few basic ingredients. Whether you've never cooked chicken strips before or you're looking to expand your rice knowledge, we're here to walk you through every step with clear instructions, helpful tips, and encouraging support.
+At the heart of our site is teaching. You'll find easy, step-by-step recipes that show you how to prepare crispy fried chicken strips, juicy grilled versions, and oven-baked alternatives. We cover everything from choosing the right chicken, seasoning it properly, and getting that perfect golden crunch without stress. Alongside the chicken, we teach you how to cook rice perfectly every time — no more mushy or burnt results.
+We also dedicate plenty of space to the wonderful world of rice. Learn about the different types of rice and how each one pairs beautifully with chicken strips. Discover fluffy long-grain white rice for classic comfort, fragrant jasmine or basmati for aromatic dishes, sticky rice for fun finger-food style meals, nutty brown rice for healthier options, or even wild rice blends for something more gourmet. We explain the unique textures, flavors, and cooking methods for each variety so you can choose the perfect match for your chicken strips.
+Our recipes range from quick weeknight dinners to weekend comfort food experiments. You'll also find sauce ideas, side suggestions, meal-prep hacks, and simple variations to keep things interesting. Everything is written in plain language so new cooks feel confident in the kitchen.
+RiceAndChickenStrips.com is more than just a recipe collection — it's an invitation to discover how fun and rewarding simple cooking can be. We hope you leave feeling inspired, informed, and ready to create your own perfect plate of chicken strips and rice.
+Thank you for visiting. Happy cooking!</p>
+
+
+  
+  <h2 id="example1">Gallery</h2>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://www.creationsbykara.com/wp-content/uploads/2023/02/Crispy-Chicken-Strips-with-cornflakes-11-2.jpg" style="width:100%">
+    <div class="text">Chicken Strips</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://images.squarespace-cdn.com/content/v1/556feb06e4b02d3071c7736e/9a25fab5-b480-4376-bcfb-c5117a6d216e/shutterstock_320668721.jpg" style="width:100%">
+    <div class="text"> A Hot Bowl of White Rice</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://cb.scene7.com/is/image/Crate/ZojirushiMicom5p5cpRiceCkrSHF16?$web_pdp_main_carousel_med$" style="width:100%">
+    <div class="text">An Asian's essential tool: the RICECOOKER</div>
+  </div>
+
+ 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+</script>
+</main>
+</body>
+</html>
